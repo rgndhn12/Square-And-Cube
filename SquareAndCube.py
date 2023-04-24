@@ -41,14 +41,29 @@ with open("integers.txt", "r") as integers_file, open("double.txt", "a") as squa
            cubed_file.write(str(int_cubed) + "\n" )
 
 #display the output
+print(border)
+time.sleep(2)
+print(Fore.GREEN+pyfiglet.figlet_format("The Square of Even...",font="digital"))
+time.sleep(2)
+
 with open("double.txt", "r") as squared_file:
     for line in squared_file:
         print("*"*5)
         print(line.strip())
 
+print(border)
+time.sleep(2)
+print(Fore.CYAN+pyfiglet.figlet_format("The Cube of Odd...",font="digital"))
+time.sleep(2)
+
 with open("triple.txt", "r") as cubed_file:
     for line in cubed_file:
         print("*"*5)
         print(line.strip())
+
+#outro
+print(border)
+time.sleep(2)
+print(Fore.LIGHTRED_EX+pyfiglet.figlet_format("LET'S GO",font="isometric1"))
 
 
