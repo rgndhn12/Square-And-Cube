@@ -6,8 +6,12 @@ with open("integers.txt", "r") as integers_file, open("double.txt", "a") as squa
 #read integers.txt
     for line in integers_file:
         print(line.strip())
+        integers_file = int(line)
 
 #if it is even
+        if integers_file % 2 != 1:
+            
+
 #   find the square of it
 #   write it in double.txt
 
