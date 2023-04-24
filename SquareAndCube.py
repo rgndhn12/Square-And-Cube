@@ -4,6 +4,8 @@
 with open("integers.txt", "r") as integers_file, open("double.txt", "a") as squared_file, open("triple.txt", "a") as cubed_file:
 
 #read integers.txt
+    for line in integers_file:
+        print(line.strip())
 
 #if it is even
 #   find the square of it
