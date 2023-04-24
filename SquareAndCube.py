@@ -10,9 +10,10 @@ with open("integers.txt", "r") as integers_file, open("double.txt", "a") as squa
 
 #if it is even
         if integers_file % 2 != 1:
-            
-
+                    
 #   find the square of it
+            int_squared = integers_file ** 2
+            
 #   write it in double.txt
 
 #if it is odd
