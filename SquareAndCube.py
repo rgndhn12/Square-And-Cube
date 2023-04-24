@@ -13,8 +13,9 @@ with open("integers.txt", "r") as integers_file, open("double.txt", "a") as squa
                     
 #   find the square of it
             int_squared = integers_file ** 2
-            
+
 #   write it in double.txt
+            squared_file.write(str(int_squared) + "\n" )
 
 #if it is odd
 #   find the cube of it
