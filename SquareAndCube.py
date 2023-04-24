@@ -18,7 +18,9 @@ with open("integers.txt", "r") as integers_file, open("double.txt", "a") as squa
             squared_file.write(str(int_squared) + "\n" )
 
 #if it is odd
+        else:
 #   find the cube of it
+           int_cubed = integers_file ** 3
 #   write it in triple.txt
-
+           
 #display the output
