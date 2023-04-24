@@ -1,5 +1,19 @@
 #Dahan, Regine Fae M. BSCPE 1-5 File Handling #4
 
+#introduction
+import pyfiglet
+import time
+import colorama
+from colorama import Fore
+colorama.init()
+print(Fore.LIGHTRED_EX+pyfiglet.figlet_format("HEY",font="isometric1"))
+time.sleep(1)
+border = "—" * 100
+print(border)
+print(Fore.LIGHTBLUE_EX+' This Program is entitled Square And Cube. For it will square the even, and cube the odd! ')
+print(border)
+time.sleep(2)
+
 #open integers.txt,create double.txt and triple.txt
 with open("integers.txt", "r") as integers_file, open("double.txt", "a") as squared_file, open("triple.txt", "a") as cubed_file:
 
