@@ -27,3 +27,14 @@ with open("integers.txt", "r") as integers_file, open("double.txt", "a") as squa
            cubed_file.write(str(int_cubed) + "\n" )
 
 #display the output
+with open("double.txt", "r") as squared_file:
+    for line in squared_file:
+        print("*"*5)
+        print(line.strip())
+
+with open("triple.txt", "r") as cubed_file:
+    for line in cubed_file:
+        print("*"*5)
+        print(line.strip())
+
+
